@@ -69,7 +69,6 @@ tripmate-ai/
 │   └── app.py                 # Streamlit interface
 ├── tests/
 │   └── test_pipeline.py       # end-to-end test with mocked LLM/weather calls
-├── notebooks/                 # for evaluation notebooks (latency, hallucination checks, etc.)
 ├── requirements.txt
 ├── .env.example
 └── README.md
@@ -118,11 +117,4 @@ it validates the pipeline wiring, not the LLM's output quality.
   latency is additive — report this honestly in an evaluation section rather than only reporting
   best-case timing.
 
-## What to measure for an evaluation section
 
-- **Budget accuracy**: do the itinerary's estimated daily costs sum to ≤ total budget?
-- **Weather-groundedness**: manually check outdoor activities aren't suggested on flagged-rainy days.
-- **Attraction hallucination rate**: does the itinerary ever mention a place not in the
-  Destination Agent's `top_attractions` list?
-- **Latency**: end-to-end plan generation time (`timings["total"]` from the pipeline), reported
-  honestly since sequential LLM calls add up.
