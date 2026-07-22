@@ -117,4 +117,11 @@ it validates the pipeline wiring, not the LLM's output quality.
   latency is additive — report this honestly in an evaluation section rather than only reporting
   best-case timing.
 
+## Contact
 
+Project Link: [https://github.com/dishaaak/askmydocs](https://github.com/dishaaak/askmydocs)
+
+Team: [Shashwat] · [Ritika] · [Harshita]· [Mayuri] · [Dishaa]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
